@@ -1,1 +1,12 @@
-<template>đây là trang role</template>
+<template><a-typography-title>Roles</a-typography-title></template>
+
+<script>
+import { useMenu } from "../../../stores/use-menu";
+
+export default {
+  setup() {
+    const store = useMenu();
+    store.onSelectedKeys(["admin-roles"]);
+  },
+};
+</script>

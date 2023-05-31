@@ -4,6 +4,11 @@ const admin = [
     component: () => import("../layouts/admin.vue"),
     children: [
       {
+        path: "notes",
+        name: "admin-notes",
+        component: () => import("../pages/admin/notes/index.vue"),
+      },
+      {
         path: "users",
         name: "admin-users",
         component: () => import("../pages/admin/users/index.vue"),
