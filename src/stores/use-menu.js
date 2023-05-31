@@ -6,7 +6,6 @@ export const useMenu = defineStore("menuId", {
       selectedKeys: [],
       openKeys: [],
       collapsed: false,
-      // activeKey: 2,
     };
   },
   actions: {

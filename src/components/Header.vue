@@ -1,15 +1,7 @@
 <template>
   <a-layout-header :style="{ background: '#fff', padding: '0 17px' }">
-    <MenuUnfoldOutlined
-      v-if="collapsed"
-      class="trigger"
-      @click="() => (collapsed = !collapsed)"
-    />
-    <MenuFoldOutlined
-      v-else
-      class="trigger"
-      @click="() => (collapsed = !collapsed)"
-    />
+    <MenuUnfoldOutlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)" />
+    <MenuFoldOutlined v-else class="trigger" @click="() => (collapsed = !collapsed)" />
   </a-layout-header>
 </template>
 
