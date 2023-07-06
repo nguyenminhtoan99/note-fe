@@ -1,6 +1,8 @@
 <template>
   <a-typography-title>Your Notes</a-typography-title>
-
+  <a-button type="primary" @click="$router.push({ name: 'create-note' })"
+    >Add note</a-button
+  >
   <a-tabs v-model:activeKey="activeKey">
     <a-tab-pane key="1" tab="All">
       <a-row :gutter="[10, 16]">
@@ -10,24 +12,10 @@
         <a-col>
           <Card />
         </a-col>
-        <a-col>
-          <Card />
-        </a-col>
-        <a-col>
-          <Card />
-        </a-col>
-        <a-col>
-          <Card />
-        </a-col>
-        <a-col>
-          <Card />
-        </a-col>
-        <a-col>
-          <Card />
-        </a-col>
-        <a-col>
-          <Card />
-        </a-col>
+      </a-row>
+    </a-tab-pane>
+    <a-tab-pane key="2" tab="Pin" force-render>
+      <a-row :gutter="[10, 16]">
         <a-col>
           <Card />
         </a-col>
@@ -35,11 +23,15 @@
           <Card />
         </a-col>
       </a-row>
-
-
     </a-tab-pane>
-    <a-tab-pane key="2" tab="Pin" force-render>Content of Tab Pane 2</a-tab-pane>
-    <a-tab-pane key="3" tab="Favourite">Content of Tab Pane 3</a-tab-pane>
+    <a-tab-pane key="3" tab="Favourite">
+      <a-row :gutter="[10, 16]">
+        <a-col>
+          <Card />
+        </a-col>
+        <a-col> <Card /> </a-col
+      ></a-row>
+    </a-tab-pane>
   </a-tabs>
 </template>
 
